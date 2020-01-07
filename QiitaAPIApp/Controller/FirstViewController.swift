@@ -9,7 +9,7 @@
 import UIKit
 
 class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var tagName = String()
@@ -24,10 +24,8 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         tableView.dataSource = self
         
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
-        tableView.rowHeight = UITableView.automaticDimension
-        //可変
         tableView.estimatedRowHeight = 80
-        
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,10 +45,10 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       //記事の数
-       return articles.count
+        //記事の数
+        return articles.count
     }
-   
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",for: indexPath) as! TableViewCell
         cell.articleTitleLabel.text = articles[indexPath.row].title
@@ -79,13 +77,13 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         }
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

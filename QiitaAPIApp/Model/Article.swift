@@ -8,6 +8,7 @@
 
 import Foundation
 
+//QiitaAPIのjson形式記事情報
 struct Article: Codable {
     var title: String
     var url: String

@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 
 class ArticleViewController: UIViewController,WKNavigationDelegate {
-
+    
     let webView = WKWebView()
     var articleUrl = String()
     
@@ -20,7 +20,7 @@ class ArticleViewController: UIViewController,WKNavigationDelegate {
         webView.frame = CGRect(x: 0, y: toolBar.frame.size.height, width: view.frame.size.width, height: view.frame.size.height - toolBar.frame.size.height)
         view.addSubview(webView)
         
-        //ロードするもの
+        //Qiitaのwebサイトから記事をロード
         webView.navigationDelegate = self
         let url = URL(string: "\(articleUrl)")
         let request = URLRequest(url: url!)
@@ -28,13 +28,13 @@ class ArticleViewController: UIViewController,WKNavigationDelegate {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
