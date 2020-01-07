@@ -133,7 +133,7 @@
             </objects>
             <point key="canvasLocation" x="1657.9710144927537" y="0.0"/>
         </scene>
-        <!--設定-->
+        <!--Setting View Controller-->
         <scene sceneID="h4S-dB-dOy">
             <objects>
                 <viewController id="Vso-1f-D6A" customClass="SettingViewController" customModule="QiitaAPIApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -155,7 +155,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HLM-hf-zQb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="設定" image="gear" catalog="system" id="i9s-X9-k9p"/>
+                    <tabBarItem key="tabBarItem" title="" image="tag.fill" catalog="system" id="i9s-X9-k9p"/>
                     <navigationItem key="navigationItem" id="rbS-fl-r8x"/>
                     <connections>
                         <outlet property="tagTextField" destination="Orx-eP-PW0" id="gO4-Li-9NG"/>
@@ -184,11 +184,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--最新-->
+        <!--Navigation Controller-->
         <scene sceneID="6M6-9W-U9K">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eK7-7J-pEa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="最新" image="doc.fill" catalog="system" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="" image="doc.fill" catalog="system" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="8ee-0t-Ja9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -207,11 +207,11 @@
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="-688.39285714285711"/>
         </scene>
-        <!--検索-->
+        <!--Navigation Controller-->
         <scene sceneID="suA-qJ-ZmT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6kP-oS-yWh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="検索" image="magnifyingglass" catalog="system" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1F3-nJ-ITB">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -230,7 +230,6 @@
     </scenes>
     <resources>
         <image name="doc.fill" catalog="system" width="56" height="64"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="tag.fill" catalog="system" width="64" height="58"/>
     </resources>
